@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            font-size: 30px;
+            width: 200px;
+            text-align: center;
+            border: 2px solid;
+        }
+        .a{
+            padding: 20px;
+            border: 2px solid;
+            cursor: pointer;
+        }
+        #a{
+            border: 2px solid;
+            width: 243px;
+            height:40px;
+        } 
+        button{
+            border: 1px solid;
+            width: 260px;
+            height:30px ;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="ab()">CALCULATE</button>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="a"></td>
+        </tr>
+        <tr class="s">
+            <td onclick="cl()" class="a acl">c</td>
+            <td onclick="mo()" class="a amo">%</td>
+            <td onclick="ad()" class="a aad">*</td>
+            <td onclick="de()" class="a ade">/</td>
+        </tr>
+        <tr class="s2">
+            <td onclick="a7()" class="a a7">7</td>
+            <td onclick="a8()" class="a a8">8</td>
+            <td onclick="a9()" class="a a0">9</td>
+            <td onclick="se()" class="a ase">-</td>
+        </tr>
+        <tr class="s3">
+            <td onclick="a4()" class="a a4">4</td>
+            <td onclick="a5()" class="a a5">5</td>
+            <td onclick="a6()" class="a a6">6</td>
+            <td onclick="pl()" class="a apl">+</td>
+        </tr>
+        <tr class="s4">
+            <td onclick="a1()" class="a a1">1</td>
+            <td onclick="a2()" class="a a2">2</td>
+            <td onclick="a3()" class="a a3">3</td>
+            <td onclick="en()" class="a aen" rowspan="2">=</td>
+        </tr>
+        <tr class="s5">
+            <td onclick="d()" class="a ad">.</td>
+            <td onclick="a()" class="a aa">0</td>
+            <td onclick="d()" class="a ad">.</td>
+        </tr>
+
+    </table>
+</body>
+<script>
+    // var a=document.getElementById("a");
+    function a(){
+        document.getElementById('a').value +=0
+    }
+    function a1(){
+        document.getElementById('a').value +=1
+    }
+    function a2(){
+        document.getElementById('a').value +=2
+    }
+    function a3(){
+        document.getElementById('a').value +=3
+    }
+    function a4(){
+        document.getElementById('a').value +=4
+    }
+    function a5(){
+        document.getElementById('a').value +=5
+    }
+    function a6(){
+        document.getElementById('a').value +=6
+    }
+    function a7(){
+        document.getElementById('a').value +=7
+    }
+    function a8(){
+        document.getElementById('a').value +=8
+    }
+    function a9(){
+        document.getElementById('a').value +=9
+    }
+    function pl(){
+        document.getElementById('a').value +="+"
+    }
+    function ad(){
+        document.getElementById('a').value +="*"
+    }
+    function de(){
+        document.getElementById('a').value +="/"
+    }
+    function mo(){
+        document.getElementById('a').value +="%"
+    }
+    function se(){
+        document.getElementById('a').value +="-"
+    }
+    function ab(){
+     var a=document.getElementById('a').value
+        document.getElementById('a').value = eval(a)
+    }
+
+
+</script>
+</html>
