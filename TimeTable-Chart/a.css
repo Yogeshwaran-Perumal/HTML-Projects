@@ -1,0 +1,33 @@
+table{
+    border: 3PX solid #747272;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    background-color: aqua;
+    cursor: pointer;
+
+}
+table:hover{
+    background-color: chartreuse;
+}
+body{
+    background-color: black;
+}
+
+.time-table{
+    text-align: center;
+
+}
+tr,td,th{
+    border: 1PX solid;
+    border-collapse: collapse;
+}
+tr{
+    height: 50px;
+}
+.lunch{
+    text-orientation: upright;
+    writing-mode: tb-rl;
+    letter-spacing: 30px;
+}
+
